@@ -1,6 +1,6 @@
 #  Introduction à Numpy les bases
 
-Nous allons voir dans ce cours comment explorer et formater les données à l'aide de Numpy et surtout Pandas que nous verrons par la suite.
+Nous allons voir dans ce cours comment explorer et formater les données à l'aide de Numpy.
 
 ## 1. Qu'est-ce qu'une donnée (définition) ?
 
@@ -234,8 +234,6 @@ Nous avons relevé des températures au mois de Janvier. Répondez aux questions
 january = np.array([-2,  5, -5,  6, -2,  0,  6,  2,  8,  0,  6, -1,  3,  3,  7,  0, -5,
         7,  4,  7,  8, -1,  5, -2,  3, -3, -2,  7,  8,  4,  2])
 ```
-
-
 
 ## 7. Structure array définition et accès aux données
 
@@ -597,7 +595,7 @@ np.where( a > 2, 1 , 0)
 
 Soit le tableau A suivant on cherche les valeurs minimales par ligne.
 
-Nous aimerions à l'aide d'un script Python trouver tous les indices de tableau par ligne des minimaux et les enregistrer dans une liste de tuples comme dans l'exemple ci-dessous :
+Nous aimerions à l'aide d'un script Python trouver tous les indices de tableau par ligne des minimaux et les enregistrer dans un array Numpy comme dans l'exemple ci-dessous :
 
 ```python
 
@@ -610,7 +608,7 @@ A = np.array([
 ])
 
 # Liste des minimaux et leur position sur chaque ligne
-minTabLine = [(0, 13), (0, 16), (0, 34), (0, 13), (2, 10)]
+minTabLine = array[(0, 13), (0, 16), (0, 34), (0, 13), (2, 10)]
 ```
 
 ### 05 Exercice doublon
@@ -650,16 +648,16 @@ Développez un script permettant de nettoyer le dataset students pour obtenir le
 ```python
 
 students = np.array([
-    [  "Name: Luce du Coulon" , "phone: 201-20-30"],
-    [  "Name: Auguste Dupont", "phone: 201-22-30"],
-    [  "Name: Roger Le Voisi", "phone: 201-27-30"],
-    [  "Name: Alexandre Lacri", "phone: 201-10-30"],
-    [  "Name: Jacques Humber", "phone: 201-20-35"],
-    [  "Name: Thérèse Guille", "phone: 201-20-38"],
-    [  "Name: Gilles Gros-Bodin", "phone: 201-20-39"],
-    [  "Name: Amélie Pires", "phone: 201-25-39"],
-    [  "Name: Marcel Laporte", "phone: 201-20-39"],
-    [  "Name: Geneviève Marchal", "phone: 301-20-39"]
+    ['Name: Luce du Coulon', 'phone: 201-20-30', '140Euro'],
+    ['Name: Auguste Dupont', 'phone: 201-22-30', '10Euro'],
+    ['Name: Roger Le Voisi', 'phone: 201-27-30', '123Euro'],
+    ['Name: Alexandre Lacri', 'phone: 201-10-30', '124Euro'],
+    ['Name: Jacques Humber', 'phone: 201-20-35', '127Euro'],
+    ['Name: Thérèse Guille', 'phone: 201-20-38', '132Euro'],
+    ['Name: Gilles Gros-Bodin', 'phone: 201-20-39', '105Euro'],
+    ['Name: Amélie Pires', 'phone: 201-25-39', '27Euro'],
+    ['Name: Marcel Laporte', 'phone: 201-20-39', '17Euro'],
+    ['Name: Geneviève Marchal', 'phone: 301-20-39', '16Euro']
 ])
 
 santize = np.array([
