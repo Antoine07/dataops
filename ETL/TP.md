@@ -67,19 +67,21 @@ def transform(data):
     pass
 ```
 
-1. Enregistrez les données dans un nouveau fichier. Avec Pandas, voyez dans la documentation de la librairie, vous pouvez créez un fichier, implémentez cette dernière fonction.
+3. Enregistrez les données dans un nouveau fichier
 
 ```python
 def load(data):
     pass
 ```
 
-4. Agrégation
+4. Questions sur les données
 
-Agrégez les données à l'aide de la fonction groupby. Voyez la documentation de cette fonction et étudiez l'écart des salaires dans le département **Boston Police Department**.
+   1. Calculez l'écart moyen des salaires dans chaque département.
+   2. Quel est le salaire médian dans le département de la Police de Boston ?
+   3. Calculez le salaire minimum et maximum pour le département des Transports (Boston Transportation Department).
 
 5. Organiser
 
 Proposez en vous appuyant sur la méthodologie AGILE une organisation pour itérer sur le traitement de données.
 
-Présentez votre analyse en proposant un cycle de vie pour vos données.
+Présentez votre analyse en proposant un cycle de vie pour vos données dans cet étude ( généralisation ), regardez la présentation du Dataops [ici](./dataops.md)
