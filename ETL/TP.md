@@ -74,10 +74,10 @@ def load(data):
 
 4. Agrégation
 
-Agrégez les données à l'aide de la fonction groupby. Voyez la documentation de cette fonction et étudiez l'écart des salaires dans le département **Boston Police Department**.
+Etudiez l'écart des salaires dans le département **Boston Police Department**.
 
 5. Organiser
 
 Proposez en vous appuyant sur la méthodologie AGILE une organisation pour itérer sur le traitement de données.
 
-Présentez votre analyse en proposant un cycle de vie pour vos données.
+Présentez votre analyse en proposant un cycle de vie pour vos données dans cet étude ( généralisation ), regardez la présentation du Dataops [ici](./dataops.md)
