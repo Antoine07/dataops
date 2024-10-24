@@ -72,9 +72,11 @@ def load(data):
     pass
 ```
 
-4. Agrégation
+4. Questions sur les données
 
-Etudiez l'écart des salaires dans le département **Boston Police Department**.
+   1. Calculez l'écart moyen des salaires dans chaque département.
+   2. Quel est le salaire médian dans le département de la Police de Boston ?
+   3. Calculez le salaire minimum et maximum pour le département des Transports (Boston Transportation Department).
 
 5. Organiser
 
