@@ -14,7 +14,6 @@ Vous utiliserez les dépendances suivantes
 ```python
 import json
 import numpy as np 
-import pandas as pd 
 import urllib.request
 ```
 
