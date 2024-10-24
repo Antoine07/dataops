@@ -45,19 +45,17 @@ Indications : vous devez éliminer les lignes qui posent problèmes voici quelqu
 - Créez un mask pour rechercher dans le DataFrame les lignes suivantes
 
 ```python
-mask = data['TOTAL EARNINGS'] != 'TOTAL EARNINGS'
 ```
 
 - Normalisez les formats de vos données et **modifiez** le DataFrame en conséquence.
 
 ```python
-data['TOTAL EARNINGS'].str.replace(',', '')
 ```
 
 - Forcez le type de vos champs à l'aide de la méthode suivante
 
 ```python
-data['TOTAL EARNINGS'].astype(float)
+
 ```
 
 Créez la fonction suivante qui va synthétiser votre approche d'analyse de données.
