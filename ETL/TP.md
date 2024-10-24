@@ -65,7 +65,7 @@ def transform(data):
     pass
 ```
 
-3. Enregistrez les données dans un nouveau fichier. Avec Pandas, voyez dans la documentation de la librairie, vous pouvez créez un fichier, implémentez cette dernière fonction.
+3. Enregistrez les données dans un nouveau fichier
 
 ```python
 def load(data):
