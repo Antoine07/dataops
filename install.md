@@ -7,7 +7,7 @@
 ```bash
 # Soit directement jupyter 
 # docker pull jupyter/datascience-notebook
-docker run -it --rm -p 10000:8888 -v "./":/home/jovyan/work quay.io/jupyter/datascience-notebook:2024-04-29
+docker run -it --rm -p 10000:8888 -v "${PWD}/":/home/jovyan/work quay.io/jupyter/datascience-notebook:2024-04-29
 
 # Token et mot de passe
 jupyter server list

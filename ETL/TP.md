@@ -14,7 +14,6 @@ Vous utiliserez les dépendances suivantes
 ```python
 import json
 import numpy as np 
-import pandas as pd 
 import urllib.request
 ```
 
@@ -43,22 +42,22 @@ response_dict = json.loads(fileobj.read())
 
 Indications : vous devez éliminer les lignes qui posent problèmes voici quelques pistes,
 
-- Créez un mask pour rechercher dans le DataFrame les lignes suivantes
+- Créez un mask pour rechercher dans les données les lignes suivantes, vérifiez qu'elles sont bien cohérentes ou pas.
 
 ```python
-mask = data['TOTAL EARNINGS'] != 'TOTAL EARNINGS'
+'TOTAL EARNINGS'
 ```
 
-- Normalisez les formats de vos données et **modifiez** le DataFrame en conséquence.
+- Normalisez les formats de vos données et **modifiez** 
 
 ```python
-data['TOTAL EARNINGS'].str.replace(',', '')
+'TOTAL EARNINGS'
 ```
 
-- Forcez le type de vos champs à l'aide de la méthode suivante
+- Forcez le type, par exemple en float de 
 
 ```python
-data['TOTAL EARNINGS'].astype(float)
+'TOTAL EARNINGS'
 ```
 
 Créez la fonction suivante qui va synthétiser votre approche d'analyse de données.
@@ -68,7 +67,7 @@ def transform(data):
     pass
 ```
 
-3. Enregistrez les données dans un nouveau fichier. Avec Pandas, voyez dans la documentation de la librairie, vous pouvez créez un fichier, implémentez cette dernière fonction.
+1. Enregistrez les données dans un nouveau fichier. Avec Pandas, voyez dans la documentation de la librairie, vous pouvez créez un fichier, implémentez cette dernière fonction.
 
 ```python
 def load(data):
